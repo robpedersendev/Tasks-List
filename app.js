@@ -256,14 +256,14 @@ function filterTasks(e) {
 
   //Can use for each since this retuns a node list
   //The line below finds all HTML elements that have the class ".collection-item" and creates a loop using the ".forEach" method and creates a function that takes in task as its iterator
-  document.querySelectorAll('.collection-item').forEach( function(task){
+  document.querySelectorAll('.collection-item').forEach(function(task){
     //Create a variable that is assigned to the text content of the first child of each "li" item
-    const item = task.firstChild.textConect;
+    const item = task.firstChild.textContent;
     //This line of code compares the numerical value of the existing tasks to see what it equals. If it equals '-1' then this function will not occur. If it equals something different from '-1' then it will occur.
     //This sets each letter typed into the filter area to lowercase
     if(item.toLowerCase().indexOf(text) != -1)  {
       //This line of code sets the display style of the task variable to "block"
-      task.stlye.display = 'block';
+      task.style.display = 'block';
     } else {
       //This line of code sets the display style of the task variable to "none" which temporarily sets the display to none
       task.style.display = 'none';
