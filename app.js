@@ -39,7 +39,7 @@ function loadEventListeners () {
 }
 
 //Get Tasks from LocalStorage
-function getTasks() {
+function getTasks() { 
   //Create a variable called "tasks" on a block scope
   let tasks;
   //The line of code below is saying if the tasks in local Storage equal Null
